@@ -1,0 +1,9 @@
+services: 
+  fetch:
+    container_name: fetch
+    build: ./fetch
+    hostname: fetch
+    volumes:
+      - ./fetch:/fetch
+    ports:
+      - "80:4444"
